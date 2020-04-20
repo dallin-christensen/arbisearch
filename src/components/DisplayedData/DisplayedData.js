@@ -19,10 +19,11 @@ const SiteNames = styled.div`
   font-size: 25px;
   color: ${elColors.text1};
   font-weight: bold;
+  margin-bottom: 5px;
 `
 
 const EventNames = styled.div`
-  font-size: 35px;
+  font-size: 28px;
   padding: 10px;
   color: ${elColors.text2}
 `

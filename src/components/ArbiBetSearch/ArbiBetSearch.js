@@ -13,8 +13,11 @@ const Wrap = styled.div`
 
 const SearchSelectZone = styled.div`
   display: flex;
-  width: 600px;
+  width: 100%;
+  max-width: 600px; 
   box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
 `
 
 const SearchSelectWrap = styled.div`

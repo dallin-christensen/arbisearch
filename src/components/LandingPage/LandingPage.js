@@ -19,7 +19,7 @@ const Title = styled.h1`
   text-align: center;
   padding-top: 70px;
   padding-bottom: 70px;
-  font-size: 90px;
+  font-size: 70px;
   color: ${elColors.title1};
   user-select: none;
   margin-bottom: 50px;
