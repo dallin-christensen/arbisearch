@@ -1,27 +1,29 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import elColors from '../../styles/elColors'
+import colors from '../../styles/colors'
 import ArbiBetSearch from '../ArbiBetSearch/ArbiBetSearch'
 
 const LandingWrap = styled.div`
   background-color: ${elColors.background1};
   width: 100%;
   min-height: 100vh;
-  color: ${elColors.title1};
+  color: ${elColors.text1};
   box-sizing: border-box;
   margin: 0;
-  padding: 0 20px;
 `
 
 const Title = styled.h1`
   margin: 0;
   padding: 0;
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   font-size: 90px;
-  color: ${props => props.searchMatchingOdds ? elColors.title2 : elColors.title1};
+  color: ${elColors.title1};
   user-select: none;
+  margin-bottom: 50px;
+  background-image: linear-gradient(19deg, ${props => props.searchMatchingOdds ? colors.red : colors.blue}, #A9F);
 `
 
 const LandingPage = () => {
@@ -41,7 +43,7 @@ const LandingPage = () => {
 
   return (
     <LandingWrap>
-      <Title searchMatchingOdds={searchMatchingOdds} onClick={handleTitleClick}>&#123;arbi search&#125;</Title>
+      <Title searchMatchingOdds={searchMatchingOdds} onClick={handleTitleClick}>&#123;arbisearch&#125;</Title>
       <ArbiBetSearch reverseOddsMatch={searchMatchingOdds} />
     </LandingWrap>
   );

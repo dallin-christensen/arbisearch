@@ -24,6 +24,7 @@ const SiteNames = styled.div`
 const EventNames = styled.div`
   font-size: 35px;
   padding: 10px;
+  color: ${elColors.text2}
 `
 
 const NoneWrapper = styled.div`
