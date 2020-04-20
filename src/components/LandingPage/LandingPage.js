@@ -24,6 +24,10 @@ const Title = styled.h1`
   user-select: none;
   margin-bottom: 50px;
   background-image: linear-gradient(19deg, ${props => props.searchMatchingOdds ? colors.red : colors.blue}, #A9F);
+
+  @media only screen and (max-width: 500px) {
+    font-size: 50px;
+  }
 `
 
 const LandingPage = () => {
