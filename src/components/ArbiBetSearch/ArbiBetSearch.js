@@ -56,7 +56,12 @@ const ArbiBetSearch = ({ reverseOddsMatch }) => {
   const [isLoading, setIsLoading] = useState(false)
   const [scrapedData, setScrapedData] = useState(null)
 
-  const handleEventTypeChange = (selectedOption) => setSelectedEventType(selectedOption)
+  const handleEventTypeChange = (selectedOption) => {
+    setSelectedEventType(selectedOption)
+    if (scrapedData && !scrapedData.find((eventData) => eventData.matchNames.length)) {
+      setScrapedData(null)
+    }
+  }
 
   const handleScrapeData = async () => {
     // const data = await scrapeData({ eventType: selectedEventType, setLoadingStatus })

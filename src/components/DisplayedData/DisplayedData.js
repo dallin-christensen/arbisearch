@@ -25,7 +25,11 @@ const SiteNames = styled.div`
 const EventNames = styled.div`
   font-size: 28px;
   padding: 10px;
-  color: ${elColors.text2}
+  color: ${elColors.text2};
+  @media only screen and (max-width: 500px) {
+    font-size: 20px;
+    font-weight: bold;
+  }
 `
 
 const NoneWrapper = styled.div`
